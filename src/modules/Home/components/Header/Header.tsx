@@ -1,7 +1,6 @@
 import { Container } from '@/components/Container';
 import styles from './Header.module.scss';
 
-import Image from 'next/image';
 import { CustomImage } from '@/components/CustomImage';
 
 export const Header = () => {

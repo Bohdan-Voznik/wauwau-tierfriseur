@@ -1,8 +1,5 @@
 import styles from './Gallery.module.scss';
 
-import firstImg from '../../img/photo_1.jpg';
-import secondImg from '../../img/photo_2.jpg';
-import thirdImg from '../../img/photo_3.jpg';
 import { Container } from '@/components/Container';
 import { CustomImage } from '@/components/CustomImage';
 
@@ -18,7 +15,7 @@ export const Gallery = () => {
       <Container>
         <ul>
           {IMAGES.map((image, index) => (
-            <li>
+            <li key={index}>
               <CustomImage
                 fill
                 alt={`Image ${index}`}
